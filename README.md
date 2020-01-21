@@ -8,6 +8,10 @@ Useful scripts in relation to the cryptocurrency Metrix - https://metrixcoin.com
 
 Credit goes to [JeffreyDC](https://github.com/JeffreyDC/Metrix/blob/master/install.sh) for the initial script.
 
+**!!! THIS IS NOT USEFUL IF YOU ARE STILL USING A LINDA WALLET. !!!**
+
+Contact [#support-main](https://discord.gg/FJ2CqD) if you are still using the old Linda wallet.
+
 **This script is for only upgrading the wallet and it comes with no warranty!**
 
 **Make sure to make a copy of the `wallet.dat` file to somewhere very safe before proceeding. I personally recommend making a backup copy per wallet upgrade and/or keeping a copy of the private keys per address.**
@@ -50,6 +54,8 @@ Unlock the wallet if locked with a passphrase. Then type `metrix-cli masternode 
 > If it does say the database needs to be rebuilt, hit return (Enter) to exit and then rename/delete the folders `blocks`,`chainstate`, and `database` under `~/.metrix`. Once you have done that run `metrixd` again.
 > 
 > It should take around two to three hours to fully synchronise, depending on your setup. You can check the number of blocks synced so far by running `metrix-cli getinfo`. Compare it with current block number via the [Metrix explorer](https://metrixexplorer.kdhsolutions.co.uk/).
+> 
+> Otherwise you can [bootstrap](https://metrixexplorer.kdhsolutions.co.uk/coininfo) the wallet.
 
 ---
 
