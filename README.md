@@ -1,15 +1,18 @@
 
+
 # Metrix
 
 Useful scripts in relation to the cryptocurrency Metrix - https://metrixcoin.com/
 
-## Upgrade the VPN wallet to v3.4.0
+## Linux upgrade scripts
 
-Modified from [JeffreyDC](https://github.com/JeffreyDC/Metrix/blob/master/install.sh).
+Credit goes to [JeffreyDC](https://github.com/JeffreyDC/Metrix/blob/master/install.sh) for the initial script.
 
 **This script is for only upgrading the wallet and it comes with no warranty!**
 
-**Make sure to make a copy of the `wallet.dat` file to somewhere very safe before proceeding. I personally recommend making a backup copy per wallet upgrade.**
+**Make sure to make a copy of the `wallet.dat` file to somewhere very safe before proceeding. I personally recommend making a backup copy per wallet upgrade and/or keeping a copy of the private keys per address.**
+
+**I also recommend copying the folders `blocks`,`chainstate`, and `peers.dat` file under `~/.metrix` to another location. If you rather not and anything goes wrong with the database files after the update, the latest bootstrap download can be found here on the left hand side... https://metrixexplorer.kdhsolutions.co.uk/coininfo**
 
 All should be fine if you follow the instructions, otherwise contact the team for support (Use the channel [#support-main](https://discord.gg/FJ2CqD)).
 
@@ -18,12 +21,23 @@ Enter the follow at the shell prompt...
 ```
 cd ~/
 git clone git@github.com:ckhatton/metrix-repo.git
-sudo sh metrix-repo/metrix_upgrade_3.4.0.sh
+sudo sh metrix-repo/metrix_upgrade_3.4.4.sh $USER
+
+```
+
+> The passing of `$USER` is so that the wallet is started as the current user to avoid applying a different ownership to the database files.
+
+Older script versions (the installation files may no longer exist)...
+
+### v3.4.3
+
+```
+sudo sh metrix-repo/metrix_upgrade_3.4.3.sh $USER
 ```
 
 All being well, that should upgrade the wallet and fire it up again without any interruptions 😌
 
-### If you are running a hot/cold masternode setup
+#### If you are running a hot/cold masternode setup
 
 Unlock the wallet if locked with a passphrase. Then type `metrix-cli masternode start`. It should report that the masternode has been started remotely.
 
