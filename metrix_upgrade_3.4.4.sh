@@ -17,7 +17,7 @@
 #
 # cd ~/
 # git clone git@github.com:ckhatton/metrix-repo.git
-# sudo sh metrix-repo/metrix_upgrade_3.4.4.sh
+# sudo sh metrix-repo/metrix_upgrade_3.4.4.sh $USER
 #
 # Script begins:
 # --------------
@@ -75,7 +75,7 @@ echo " "
 echo " "
 echo " "
 echo " "
-metrixd
+sudo -u $1 metrixd
 echo " "
 echo "Wallet has started, waiting 30 seconds..."
 sleep 10
@@ -88,7 +88,7 @@ sleep 10
 echo " "
 echo "Check below the version, if you have any connections, and/or more than 0 blocks."
 echo " "
-metrix-cli getinfo
+sudo -u $1 metrix-cli getinfo
 echo " "
 echo " "
 echo " "
