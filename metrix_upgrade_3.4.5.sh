@@ -8,7 +8,7 @@
 #                                     | |     __/ |                                        | |        
 #                                     |_|    |___/                                         |_|        
 # 
-#                                                                                             v3.4.4.0
+#                                                                                             v3.4.5.0
 # ====================================================================================================
 # ****************************************************************************************************
 #
@@ -17,7 +17,7 @@
 #
 # cd ~/
 # git clone git@github.com:ckhatton/metrix-repo.git
-# sudo sh metrix-repo/metrix_upgrade_3.4.4.sh $USER
+# sudo sh metrix-repo/metrix_upgrade_3.4.5.sh $USER
 #
 # Script begins:
 # --------------
@@ -47,7 +47,7 @@ echo " "
 echo " "
 echo " "
 cd ~/
-wget https://github.com/TheLindaProjectInc/Metrix/releases/download/3.4.4/metrix-linux-x64.tar.gz
+wget https://github.com/TheLindaProjectInc/Metrix/releases/download/3.4.5/metrix-linux-x64.tar.gz
 tar -xzvf metrix-linux-x64.tar.gz -C /usr/local/bin/
 echo " "
 echo " "
