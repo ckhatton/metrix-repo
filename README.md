@@ -25,19 +25,11 @@ Enter the follow at the shell prompt...
 ```
 cd ~/
 git clone git@github.com:ckhatton/metrix-repo.git
-sudo sh metrix-repo/metrix_upgrade_3.4.4.sh $USER
+sudo sh metrix-repo/metrix_upgrade_3.4.5.sh $USER
 
 ```
 
 > The passing of `$USER` is so that the wallet is started as the current user to avoid applying a different ownership to the database files.
-
-Older script versions (the installation files may no longer exist)...
-
-### v3.4.3
-
-```
-sudo sh metrix-repo/metrix_upgrade_3.4.3.sh $USER
-```
 
 All being well, that should upgrade the wallet and fire it up again without any interruptions 😌
 
