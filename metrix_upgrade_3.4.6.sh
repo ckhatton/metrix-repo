@@ -8,7 +8,7 @@
 #                                     | |     __/ |                                        | |        
 #                                     |_|    |___/                                         |_|        
 # 
-#                                                                                             v3.4.5.0
+#                                                                                             v3.4.6.0
 # ====================================================================================================
 # ****************************************************************************************************
 #
@@ -17,7 +17,7 @@
 #
 # cd ~/
 # git clone git@github.com:ckhatton/metrix-repo.git
-# sudo sh metrix-repo/metrix_upgrade_3.4.5.sh $USER
+# sudo sh metrix-repo/metrix_upgrade_3.4.6.sh $USER
 #
 # Script begins:
 # --------------
@@ -33,7 +33,6 @@ echo "Stopping any instance of the Metrix deamon."
 echo " "
 metrixd stop
 metrix-cli stop
-echo " "
 sleep 5
 echo " "
 echo " "
@@ -47,7 +46,7 @@ echo " "
 echo " "
 echo " "
 cd ~/
-wget https://github.com/TheLindaProjectInc/Metrix/releases/download/3.4.5/metrix-linux-x64.tar.gz
+wget https://github.com/TheLindaProjectInc/Metrix/releases/download/3.4.6/metrix-linux-x64.tar.gz
 tar -xzvf metrix-linux-x64.tar.gz -C /usr/local/bin/
 echo " "
 echo " "
@@ -90,15 +89,11 @@ echo "Check below the version, if you have any connections, and/or more than 0 b
 echo " "
 sudo -u $1 metrix-cli getinfo
 echo " "
-echo " "
-echo " "
-echo " "
-echo " "
 echo "Cleaning up installation files."
-echo " "
 cd ~/
 rm -rf metrix-repo
 rm -rf metrix-linux-x64.tar.gz
+echo " "
 echo " "
 echo "All done! 😊  YaY! 🙌 🎉"
 echo " "
