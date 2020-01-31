@@ -6,15 +6,24 @@ Useful scripts in relation to the cryptocurrency Metrix - https://metrixcoin.com
 
 Credit goes to JeffreyDC for the initial script.
 
-**!!! THIS IS NOT USEFUL IF YOU ARE STILL USING A LINDA WALLET. !!!**
+> **Alert:**
+> 
+> **!!! THIS IS NOT USEFUL IF YOU ARE STILL USING A LINDA WALLET. !!!**
+> 
+> Contact [#support-main](https://discord.gg/FJ2CqD) if you are still using the old Linda wallet.
 
-Contact [#support-main](https://discord.gg/FJ2CqD) if you are still using the old Linda wallet.
-
-**This script is for only upgrading the wallet and it comes with no warranty!**
-
-**Make sure to make a copy of the `wallet.dat` file to somewhere very safe before proceeding. I personally recommend making a backup copy per wallet upgrade and/or keeping a copy of the private keys per address.**
-
-**I also recommend copying the folders `blocks`,`chainstate`, and `peers.dat` file under `~/.metrix` to another location. If you rather not and anything goes wrong with the database files after the update, the latest bootstrap download can be found here on the left hand side... https://metrixexplorer.kdhsolutions.co.uk/coininfo**
+> **Warning:**
+> 
+> This script is for only upgrading the wallet and it comes with no warranty!
+> 
+> Make sure to make a copy of the `wallet.dat` file to somewhere very safe before proceeding. I personally recommend making a backup copy
+> per wallet upgrade and/or keeping a copy of the private keys per
+> address.
+> 
+> I also recommend copying the folders `blocks`,`chainstate`, and `peers.dat` file under `~/.metrix` to another location. If you rather
+> not and anything goes wrong with the database files after the update,
+> the latest bootstrap download can be found here on the left hand
+> side... https://metrixexplorer.kdhsolutions.co.uk/coininfo
 
 All should be fine if you follow the instructions, otherwise contact the team for support (Use the channel [#support-main](https://discord.gg/FJ2CqD)).
 
@@ -27,6 +36,8 @@ sudo sh metrix-repo/metrix_upgrade_3.4.6.sh $USER
 
 ```
 
+> **Note:**
+> 
 > The passing of `$USER` is so that the wallet is started as the current user to avoid applying a different ownership to the database files.
 
 All being well, that should upgrade the wallet and fire it up again without any interruptions 😌
