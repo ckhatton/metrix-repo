@@ -6,7 +6,7 @@ Useful scripts in relation to the cryptocurrency Metrix - https://metrixcoin.com
 
 ## Linux upgrade scripts
 
-Credit goes to [JeffreyDC](https://github.com/JeffreyDC/Metrix/blob/master/install.sh) for the initial script.
+Credit goes to JeffreyDC for the initial script.
 
 **!!! THIS IS NOT USEFUL IF YOU ARE STILL USING A LINDA WALLET. !!!**
 
@@ -25,7 +25,7 @@ Enter the follow at the shell prompt...
 ```
 cd ~/
 git clone git@github.com:ckhatton/metrix-repo.git
-sudo sh metrix-repo/metrix_upgrade_3.4.5.sh $USER
+sudo sh metrix-repo/metrix_upgrade_3.4.6.sh $USER
 
 ```
 
