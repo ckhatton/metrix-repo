@@ -1,10 +1,8 @@
-
-
 # Metrix
 
 Useful scripts in relation to the cryptocurrency Metrix - https://metrixcoin.com/
 
-## Linux upgrade scripts
+## Linux Upgrade Scripts
 
 Credit goes to JeffreyDC for the initial script.
 
@@ -48,6 +46,12 @@ Unlock the wallet if locked with a passphrase. Then type `metrix-cli masternode 
 > It should take around two to three hours to fully synchronise, depending on your setup. You can check the number of blocks synced so far by running `metrix-cli getinfo`. Compare it with current block number via the [Metrix explorer](https://metrixexplorer.kdhsolutions.co.uk/).
 > 
 > Otherwise you can [bootstrap](https://metrixexplorer.kdhsolutions.co.uk/coininfo) the wallet.
+
+## Metrix Masternode Installation Guide
+
+An introduction on Metrix masternodes and how to setup either a local "hot" masternode or local & remote "hot/cold" masternode can be found here...
+
+[Metrix Masternode Installation Guide](https://github.com/nibbles83/metrix_mn_install) by [nibbles83](https://github.com/nibbles83)
 
 ---
 
